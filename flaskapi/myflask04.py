@@ -23,7 +23,7 @@ app = Flask(__name__)
 def success(name):
     return f"Welcome {name}\n"
 # This is a landing point for users (a start)
-@app.route("/") # user can land at "/"
+@app.route("/beginning") # user can land at "/"
 @app.route("/start") # or user can land at "/start"
 def start():
     return render_template("postmaker.html") # look for templates/postmaker.html
